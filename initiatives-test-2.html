@@ -1,0 +1,190 @@
+    <html>
+    <head>  
+    <link type="text/css" rel="stylesheet" href="main.css" media="all" />
+    
+    <style>
+    
+    .tooltip {
+    display:none;
+    position:absolute;
+    width:250px;
+    border:1px solid #333;
+    background-color:#161616;
+    border-radius:5px;
+    padding:10px;
+    color:#fff;
+    font-size:12px Arial;
+    }
+    </style>
+    
+	<script type='text/javascript' src='jquery-1.11.1.min.js'></script>
+    
+    <link rel="stylesheet" href="jquery-ui.css">
+    
+    <script src="jquery-1.10.2.js"></script>
+    
+    <script src="jquery-ui.js"></script>
+    
+    <script>
+    $(function() {
+    $( "#dialog" ).dialog({
+    autoOpen: false,
+    height: 300,
+    width: 350,
+    show: {
+    effect: "slide",
+    duration: 1000
+    },
+    hide: {
+    effect: "slide ",
+    duration: 1000
+    }
+    });
+    
+    $( "#opener" ).click(function() {
+    $( "#dialog" ).dialog( "open");
+    
+    $( "#dialog" ).dialog(
+    {
+    modal: true,
+    buttons: {
+    Edit: function() {
+    $( this ).dialog( "close" );
+    },
+    Ok: function() {
+    $( this ).dialog( "close" );
+    }
+    }
+    });
+    
+    });
+    });
+    
+    </script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+    // Tooltip only Text
+    $('.masterTooltip').hover(function(){
+    // Hover over code
+    var title = $(this).attr('title');
+    $(this).data('tipText', title).removeAttr('title');
+    $('<p class="tooltip"></p>')
+    .text(title)
+    .appendTo('body')
+    .fadeIn('fast');
+    }, function() {
+    // Hover out code
+    $(this).attr('title', $(this).data('tipText'));
+    $('.tooltip').remove();
+    }).mousemove(function(e) {
+    var mousex = e.pageX - 100; //Get X coordinates
+    var mousey = e.pageY + 10; //Get Y coordinates
+    $('.tooltip')
+    .css({ top: mousey, left: mousex })
+    });
+    });
+    </script>
+    
+    </head>
+    <body>
+    
+    
+    <page>
+    
+    <content-body> 
+    
+    <div>
+    <table id="factors-table" width="1400px">
+    <tr>
+    <th >Category</th>
+    <th>FY 14</th>
+    <th>FY 15</th>
+    <th>FY 16</th>
+    <th>FY 17</th>
+    <th>FY 18</th>
+    <th>FY 19</th>
+    <th>FY 20</th>
+    <th>Notes</th>
+    
+    </tr>
+    <tr>
+    <td class="factors-submech-name">Solicited Initiatives (RFAs)</td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,222,333"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,222,333"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,222,333"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,222,333"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,222,333"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,222,333"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,222,333"></input></td>
+    <td class="paylines-adjust-input-column">
+    
+    <!-- adding hover style  on p tag to display comment from title attribute -->  
+    <p title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem libero, varius eu finibus et, iaculis et arcu. Proin rutrum non turpis pulvinar ultrices. Aliquam vulputate nibh elit, euismod imperdiet justo tempus quis. Maecenas porttitor fringilla mauris. Vestibulum laoreet malesuada sem nec viverra. Donec faucibus sodales diam tempus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas volutpat," class="masterTooltip">
+    
+    <!-- adding dialog on popout function to display comment -->  
+    <a id="opener">Lorem ipsum dolor sit amet, consectetur...</a>  </p>            
+    
+    <div id="dialog" title="Basic dialog">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem libero, varius eu finibus et, iaculis et arcu. Proin rutrum non turpis pulvinar ultrices. Aliquam vulputate nibh elit, euismod imperdiet justo tempus quis. Maecenas porttitor fringilla mauris. Vestibulum laoreet malesuada sem nec viverra. Donec faucibus sodales diam tempus accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas volutpat</p>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td class="factors-submech-name">Co-Funding/PARs with NHLBI Review</td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$41,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,555"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,666"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,666"></input></td>
+    <td class="paylines-adjust-input-column"></td>
+    
+    </tr>
+    <tr>
+    <td class="factors-submech-name">PARS for multi-site clinical trials</td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$41,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,555"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,666"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,666"></input></td>
+    <td class="paylines-adjust-input-column"></td>
+    
+    </tr>
+    <tr>
+    <td class="factors-submech-name">PAS</td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$41,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,555"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,666"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,666"></input></td>
+    <td class="paylines-adjust-input-column"></td>
+    
+    </tr>
+    <tr>
+    <td class="factors-submech-name">Bridge Funds</td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$41,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$1,479,000"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,555"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,666"></input></td>
+    <td class="paylines-adjust-input-column"><input type="text" value="$4,479,666"></input></td>
+    <td class="paylines-adjust-input-column">
+    </td>
+    </tr>
+    </table>
+    </div>
+    </page>
+    </body>
+    </html>
+    
+    
+    
+    
+    

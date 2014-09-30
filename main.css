@@ -1,0 +1,138 @@
+body { font-size: 12px; background-color: #eee; min-width: 960px; font-family: Arial,Helvetica,sans-serif;}
+.wrapper { width: 800px; }
+
+table { margin-top:10px; border-collapse:collapse; border: 1px solid #3c3d3d; }
+
+.select-options option{ font-size: 1.2em; width:450px;}
+.select-options { font-size: 1.2em; width:450px;}
+.select-options-year option{ font-size: 1.2em; width:80px;}
+.select-options-year { font-size: 1.2em; width:80px;}
+
+h1 { font-size: 2em;   }
+h2 { font-size: 1.2em; }
+
+fieldset { border-radius: 15px;  width: 50%; }
+fieldset legend { font-weight: bold; }
+
+.content { color: #3c3d3d; font-size: 1.2em; padding: 5px 0px 10px 10px;}
+.content-y-large{ font-size: 1.2em; padding: 5px 0px 10px 10px;}
+.sidebar { font-size: 1em; }
+
+.content { width: 100%; min-height:620px; min-width: 960px; background-color: #ffffff;  white-space:nowrap; }
+.content-y-large { width: 100%; min-height:1850px; min-width: 960px; background-color: #ffffff;  white-space:nowrap; }
+.content-header {clear: both; }
+
+.sidebar { width: 30%; }
+
+.menubar { clear:both; 	width: 100%; height:40px; background-color: #3c3d3d; } 
+.menubar-item { float:left; font-size: 1.5em;  color: #ffffff; height: 20px; padding: 12px 15px 10px 15px;}
+.menubar-item-selected { float:left; font-size: 1.5em;  color: #ffffff; height: 20px; background-color: #c0143c; padding: 12px 15px 10px 15px;}
+.menubar-item:hover { background-color: #c0143c; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;}
+
+.content-menubar { clear:both; 	width: 100%; height:40px; background-color: #ffffff; } 
+.content-menubar-item { float:left; font-size: 1.2em; font-weight: normal; color: #3c3d3d; height: 20px; padding: 5px 5px 5px 5px; border-left: 2px solid #3c3d3d; }
+.content-menubar-item-selected { float:left; font-size: 1.2em; font-weight: bold; color: #3c3d3d; height: 28px; background-color: #ffffff; border-left: 2px solid #3c3d3d; padding: 5px 5px 5px 5px;}
+.content-menubar-item:hover { background-color: #ffffff; font-weight: bold; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; border-left: 2px solid #3c3d3d;}
+
+.footer { background-color: #3c3d3d; width: 100%; border-top: 4px solid #c0143c; margin-top: 15px; padding: 15px 10px 10px 10px;}
+
+#page-header { float: left; width: 100%; font-size: 1.5em; background-color: #fff; color: #c0143c}
+#page-header-logo { float: left;}
+#page-header-appname { float: left; margin-left: 50px; }
+
+#average-costs-table { width:800px inherit; } 
+#average-costs-table th{ padding: 2px 5px 2px 5px; font-size: 0.8em; font-weight: bold; text-align:center;  border: 1px solid #3c3d3d; background-color: #a1a1a1;}
+#average-costs-table th.columnleft{ padding: 2px 5px 2px 5px; font-size: 0.8em; font-weight: bold; text-align:left;  border: 1px solid #3c3d3d; background-color: #a1a1a1;}
+#average-costs-table td{ padding: 2px 5px 2px 5px; font-size: 0.8em; text-align:center; border: 1px solid #3c3d3d; }
+#average-costs-table .cnt-column{ width: 30px; font-weight: bold;}
+#average-costs-table .awd-column{ width: 60px; font-weight: bold; }
+#average-costs-table .adj_notes-column{ width: 60px;  }
+#average-costs-table tr:nth-child(even) {background: #cce5ff}
+#average-costs-table tr:nth-child(odd) {background: #fff}
+
+.average-costs-detail-table th{ padding: 2px 5px 2px 5px; font-size: 0.8em; font-weight: normal; text-align:center;  border: 1px solid #3c3d3d; background-color: #a1a1a1;}
+.average-costs-detail-table td{ padding: 2px 5px 2px 5px; font-size: 0.8em; text-align:center; border: 1px solid #3c3d3d; }
+.average-costs-detail-table tr:nth-child(even) {background: #cce5ff}
+.average-costs-detail-table tr:nth-child(odd) {background: #fff}
+
+#model-mech-table { width:800px inherit; } 
+#model-mech-table  th{ padding: 2px 5px 2px 5px; font-size: 0.8em; font-weight: bold; text-align:right;  border: 1px solid #3c3d3d; background-color: #a1a1a1;}
+#model-mech-table  th.columnleft{ padding: 2px 5px 2px 5px; font-size: 0.8em; font-weight: bold; text-align:left;  border: 1px solid #3c3d3d; background-color: #a1a1a1;}
+#model-mech-table  th.columnmid{ padding: 2px 5px 2px 5px; font-size: 0.8em; font-weight: bold; text-align:center;  border: 1px solid #3c3d3d; background-color: #a1a1a1;}
+
+#model-mech-table  td{ padding: 2px 5px 2px 5px; font-size: 0.8em; text-align:right; border: 1px solid #3c3d3d; }
+#model-mech-table  td.no-column{ width: 30px; font-weight: bold;}
+#model-mech-table  td.total-column{ width: 60px; font-weight: bold; }
+#model-mech-table  .adj_notes-column{ width: 60px;  }
+#model-mech-table  tr:nth-child(even) {background: #cce5ff}
+#model-mech-table  tr:nth-child(odd) {background: #fff}
+
+
+#factors-table th{ padding: 2px 5px 2px 5px; font-size: 1em; font-weight: bold; text-align:center;  border: 1px solid #3c3d3d; background-color: #a1a1a1;}
+#factors-table td{ padding: 2px 5px 2px 5px; text-align:left; font-size: 0.8em; border: 1px solid #3c3d3d; }
+#factors-table  tr:nth-child(even) {background: #cce5ff}
+#factors-table  tr:nth-child(odd) {background: #fff}
+
+ 
+.factors-bgdt-assumption-column { width: 50px; white-space:nowrap;}
+.factors-bgdt-assumption-column input { width: 50px;}
+.factors-submech-name {text-align: left;}
+
+.paylines-adjust-input-column { width: 80px; white-space:nowrap;}
+.paylines-adjust-input-column  input { width: 80px;}
+
+.button-container button {margin-top: 20px; padding: 5px 15px 5px 15px; font-size: 1.2em; font-weight: bold; color:#ffffff; background-color:#0000ff; border: 1px solid #a1a1a1; border-radius: 15px;}
+.table-cell-grey-background {background-color: #a1a1a1;}
+
+.content-quadrant-header { float: left; }
+.content-quadrant-header-left{ float: left; }
+.content-quadrant-header-right{ float: right; }
+.content-quadrant-header button { padding: 5px 15px 5px 15px; font-size: 1em; font-weight: bold; color:#ffffff; background-color:#0000ff; border: 1px solid #a1a1a1; border-radius: 15px;}
+
+#content-quadrants { float: left; white-space:nowrap; }
+#content-quadrant-1 { float: ; }
+#content-quadrant-2 { float: ; }
+#content-quadrant-3 { float: ; }
+
+#content-adjustments { margin-bottom: 30px;}
+
+#content-div-2 { float: ;}
+#content-div-3 { float: ; }
+
+#frozen-file-options-container { float: left; margin-bottom: 20px; }
+#frozen-file-options-year { float: left; }
+#frozen-file-options-mech { float: left; }
+#frozen-file-adjustment-container { clear: both; }
+#frozen-file-adjustment-container th { background-color: #a1a1a1;}
+#frozen-file-adjustment-table td{ padding: 2px 5px 2px 5px; border: 1px solid #3c3d3d; }
+#frozen-file-adjustment-table th{ padding: 2px 5px 2px 5px; font-size: 1em; font-weight: bold; text-align:center;  border: 1px solid #3c3d3d; background-color: #a1a1a1;}
+#frozen-file-adjustment-table tr:nth-child(even) {background: #cce5ff}
+#frozen-file-adjustment-table tr:nth-child(odd) {background: #fff}
+.frozen-file-adj-awd-column { text-align: right; }
+.frozen-file-adj-cnt-column { text-align: right; }
+.frozen-file-adj-awd-column-total-row { text-align: right; font-weight: bold;}
+.frozen-file-adj-cnt-column-total-row { text-align: right; font-weight: bold;}
+.frozen-file-adj-cnt-column  input { width: 50px; text-align: right;}
+.frozen-file-adj-awd-column  input { width: 120px; text-align: right;}
+.frozen-file-mech-name { text-align: left;}
+.frozen-file-mech-name-total-row { text-align: left; font-weight: bold;}
+
+.dollar-amount-input input{ width: 100px; text-align: right;}
+
+.mech-name-column { font-size: 0.8em; font-weight: normal; width: 200px;}
+.mech-name-column-total { font-size: 0.8em; font-weight: bold; width: 200px; }
+
+#model-mech-table  td.model-name-column { font-size: 0.8em; font-weight: normal; width: 200px; text-align:left; }
+#model-mech-table  td.model-name-column-total { font-size: 0.8em; font-weight: bold; width: 200px; text-align:left; }
+
+.table-row-hidden { display:none; }
+.table-row-hidden-2 { display:none; }
+
+.container .header { cursor: pointer; }
+.container .header-2 { cursor: pointer; }
+
+.container .mech-table-detail { display: none; padding: 10px; }
+.container .mech-table-detail th { font-size: 0.8em;}
+
+
+	
